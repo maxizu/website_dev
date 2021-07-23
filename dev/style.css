@@ -1,0 +1,67 @@
+body{
+    margin:0;
+}
+
+#background{
+    display:block;
+    position:fixed;
+    width:100%;
+    height:100%;
+    background-color: #FFFFFF;
+}
+
+#logo{
+    display:block;
+    position:fixed;
+    top:50%;
+    left:50%;
+    width:50vh;
+    height:50vh;
+    margin-left:-17vh;
+    margin-top:-17vh;
+    overflow:hidden;
+    transition:background-color 500ms;
+}
+
+#logotitel{
+    display: block;
+    position: absolute;
+    left: 2vh;
+    top: 2vh;
+    width: 46vh;
+    height: 46vh;
+    background: #6c6a6a;
+    background-size: contain;
+    font-family: Trebuchet MS, sans-serif;
+    font-size: 20vh;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    line-height: 44vh;
+}
+
+.loader{
+    display:block;
+    position:absolute;
+    background-color:#000000;
+}
+
+@keyframes slide1{
+    50%{width:48vh; margin-left:0;}
+    100%{margin-left:48vh;}
+}
+
+@keyframes slide2{
+    50%{height:48vh; margin-top:0;}
+    100%{margin-top:48vh;}
+}
+
+@keyframes slide3{
+    50%{width:48vh; margin-right:0;}
+    100%{margin-right:48vh;}
+}
+
+@keyframes slide4{
+    50%{height:48vh; margin-bottom:0}
+    100%{margin-bottom:48vh;}
+}

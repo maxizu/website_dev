@@ -1,0 +1,254 @@
+@font-face{
+    font-family: 'JetBrainsMono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root{
+    --stripcolor: #7f7e7e;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background: linear-gradient(135deg, #333, #333);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 24px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a.hover {
+    text-decoration: underline;
+}
+
+* {
+    font-family: "JetBrainsMono", sans-serif;
+    color: #424242;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+}
+
+.card-front {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main {
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin: 0 auto;
+}
+
+.job {
+    position: absolute;
+    left: 70px;
+    top: 80px;
+    font-size: 16px;
+    font-weight: 400;
+    --stripwidthjob: 16px;
+    --stripheightjob: 30px;
+}
+.job::before {
+    content: "";
+    left: 32px;
+    top: 8px;
+    height: var(--stripheightjob);
+    width: var(--stripwidthjob);
+    position: absolute;
+    border-right: 2px solid var(--stripcolor);
+    border-top: 2px solid var(--stripcolor);
+}
+.job::after {
+    content: "";
+    right: 32px;
+    top: 8px;
+    height: var(--stripheightjob);
+    width: var(--stripwidthjob);
+    position: absolute;
+    border-left: 2px solid var(--stripcolor);
+    border-top: 2px solid var(--stripcolor);
+}
+
+.me {
+    position: absolute;
+    left: 185px;
+    top: 80px;
+    font-size: 16px;
+    font-weight: 400;
+    --stripwidthme: 30px;
+    --stripheightme: 30px;
+}
+.me::before {
+    content: "";
+    left: 25px;
+    top: 8px;
+    height: var(--stripheightme);
+    width: var(--stripwidthme);
+    position: absolute;
+    border-right: 2px solid var(--stripcolor);
+    border-top: 2px solid var(--stripcolor);
+}
+.me::after {
+    content: "";
+    right: 25px;
+    top: 8px;
+    height: var(--stripheightme);
+    width: var(--stripwidthme);
+    position: absolute;
+    border-left: 2px solid var(--stripcolor);
+    border-top: 2px solid var(--stripcolor);
+}
+
+.insta {
+    position: absolute;
+    left: 164px;
+    top: 35px;
+    font-size: 16px;
+    font-weight: 400;
+    --stripwidthinsta: 40px;
+    --stripheightinsta: 75px;
+}
+.insta::before {
+    content: "";
+    left: 90px;
+    top: 8px;
+    height: var(--stripheightinsta);
+    width: var(--stripwidthinsta);
+    position: absolute;
+    border-right: 2px solid var(--stripcolor);
+    border-top: 2px solid var(--stripcolor);
+}
+.insta::after {
+    content: "";
+    right: 90px;
+    top: 8px;
+    height: var(--stripheightinsta);
+    width: var(--stripwidthinsta);
+    position: absolute;
+    border-left: 2px solid var(--stripcolor);
+    border-top: 2px solid var(--stripcolor);
+}
+
+.loc {
+    position: absolute;
+    left: 325px;
+    top: 35px;
+    font-size: 16px;
+    font-weight: 400;
+    --stripwidthloc: 10px;
+    --stripheightloc: 75px;
+}
+.loc::before {
+    content: "";
+    left: 32px;
+    top: 8px;
+    height: var(--stripheightloc);
+    width: var(--stripwidthloc);
+    position: absolute;
+    border-right: 2px solid var(--stripcolor);
+    border-top: 2px solid var(--stripcolor);
+}
+.loc::after {
+    content: "";
+    right: 32px;
+    top: 8px;
+    height: var(--stripheightloc);
+    width: var(--stripwidthloc);
+    position: absolute;
+    border-left: 2px solid var(--stripcolor);
+    border-top: 2px solid var(--stripcolor);
+}
+
+.mail {
+    position: absolute;
+    left: 191px;
+    top: 200px;
+    font-size: 16px;
+    font-weight: 400;
+    --stripwidthmail: 138px;
+    --stripheightmail: 55px;
+}
+
+.mail::before {
+    content: "";
+    left: 40px;
+    bottom: 8px;
+    height: var(--stripheightmail);
+    width: var(--stripwidthmail);
+    position: absolute;
+    border-right: 2px solid var(--stripcolor);
+    border-bottom: 2px solid var(--stripcolor);
+}
+
+.mail::after {
+    content: "";
+    right: 40px;
+    bottom: 8px;
+    height: var(--stripheightmail);
+    width: var(--stripwidthmail);
+    position: absolute;
+    border-left: 2px solid var(--stripcolor);
+    border-bottom: 2px solid var(--stripcolor);
+}
+
+.git {
+    position: absolute;
+    left: 205px;
+    top: 165px;
+    font-size: 16px;
+    font-weight: 400;
+    --stripwidthgit: 50px;
+    --stripheight: 20px;
+}
+
+.git::before {
+    content: "";
+    left: 33px;
+    bottom: 8px;
+    height: var(--stripheight);
+    width: var(--stripwidthgit);
+    position: absolute;
+    border-right: 2px solid var(--stripcolor);
+    border-bottom: 2px solid var(--stripcolor);
+}
+
+.git::after {
+    content: "";
+    right: 33px;
+    bottom: 8px;
+    height: var(--stripheight);
+    width: var(--stripwidthgit);
+    position: absolute;
+    border-left: 2px solid var(--stripcolor);
+    border-bottom: 2px solid var(--stripcolor);
+}
+
+.card-wrapper {
+    height: 272px;
+    perspective: 600px;
+    position: relative;
+    width: 420px;
+}
