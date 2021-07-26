@@ -9,6 +9,7 @@
 
 :root{
     --stripcolor: #7f7e7e;
+    --stripcolorhover: #ff0000;
 }
 
 *,
@@ -38,15 +39,20 @@ a.hover {
 
 * {
     font-family: "JetBrainsMono", sans-serif;
-    color: #424242;
+    color: #000000;
 }
 
+.card-wrapper {
+    height: 272px;
+    perspective: 600px;
+    position: relative;
+    width: 420px;
+    background: #ffffff;
+}
 .card {
     height: 100%;
     width: 100%;
-    background: #ffffff;
 }
-
 .card-front {
     height: 100%;
     width: 100%;
@@ -54,7 +60,6 @@ a.hover {
     flex-direction: column;
     justify-content: center;
 }
-
 .main {
     font-size: 34px;
     font-weight: 400;
@@ -64,7 +69,7 @@ a.hover {
 
 .job {
     position: absolute;
-    left: 70px;
+    left: 72px;
     top: 80px;
     font-size: 16px;
     font-weight: 400;
@@ -91,14 +96,27 @@ a.hover {
     border-left: 2px solid var(--stripcolor);
     border-top: 2px solid var(--stripcolor);
 }
+.job:hover{
+    color: var(--stripcolorhover);
+    cursor: pointer;
+}
+.job:hover::before {
+    border-right: 2px solid var(--stripcolorhover);
+    border-top: 2px solid var(--stripcolorhover);
+}
+.job:hover::after {
+    border-left: 2px solid var(--stripcolorhover);
+    border-top: 2px solid var(--stripcolorhover);
+}
+
 
 .me {
     position: absolute;
-    left: 185px;
+    left: 186px;
     top: 80px;
     font-size: 16px;
     font-weight: 400;
-    --stripwidthme: 30px;
+    --stripwidthme: 34px;
     --stripheightme: 30px;
 }
 .me::before {
@@ -121,14 +139,26 @@ a.hover {
     border-left: 2px solid var(--stripcolor);
     border-top: 2px solid var(--stripcolor);
 }
+.me:hover{
+    color: var(--stripcolorhover);
+    cursor: pointer;
+}
+.me:hover::before {
+    border-right: 2px solid var(--stripcolorhover);
+    border-top: 2px solid var(--stripcolorhover);
+}
+.me:hover::after {
+    border-left: 2px solid var(--stripcolorhover);
+    border-top: 2px solid var(--stripcolorhover);
+}
 
 .insta {
     position: absolute;
-    left: 164px;
+    left: 165px;
     top: 35px;
     font-size: 16px;
     font-weight: 400;
-    --stripwidthinsta: 40px;
+    --stripwidthinsta: 39px;
     --stripheightinsta: 75px;
 }
 .insta::before {
@@ -151,14 +181,26 @@ a.hover {
     border-left: 2px solid var(--stripcolor);
     border-top: 2px solid var(--stripcolor);
 }
+.insta:hover{
+    color: var(--stripcolorhover);
+    cursor: pointer;
+}
+.insta:hover::before {
+    border-right: 2px solid var(--stripcolorhover);
+    border-top: 2px solid var(--stripcolorhover);
+}
+.insta:hover::after {
+    border-left: 2px solid var(--stripcolorhover);
+    border-top: 2px solid var(--stripcolorhover);
+}
 
 .loc {
     position: absolute;
-    left: 325px;
+    left: 327px;
     top: 35px;
     font-size: 16px;
     font-weight: 400;
-    --stripwidthloc: 10px;
+    --stripwidthloc: 8px;
     --stripheightloc: 75px;
 }
 .loc::before {
@@ -181,17 +223,28 @@ a.hover {
     border-left: 2px solid var(--stripcolor);
     border-top: 2px solid var(--stripcolor);
 }
+.loc:hover{
+    color: var(--stripcolorhover);
+    cursor: pointer;
+}
+.loc:hover::before {
+    border-right: 2px solid var(--stripcolorhover);
+    border-top: 2px solid var(--stripcolorhover);
+}
+.loc:hover::after {
+    border-left: 2px solid var(--stripcolorhover);
+    border-top: 2px solid var(--stripcolorhover);
+}
 
 .mail {
     position: absolute;
     left: 191px;
-    top: 200px;
+    bottom: 35px;
     font-size: 16px;
     font-weight: 400;
-    --stripwidthmail: 138px;
-    --stripheightmail: 55px;
+    --stripwidthmail: 136px;
+    --stripheightmail: 75px;
 }
-
 .mail::before {
     content: "";
     left: 40px;
@@ -202,7 +255,6 @@ a.hover {
     border-right: 2px solid var(--stripcolor);
     border-bottom: 2px solid var(--stripcolor);
 }
-
 .mail::after {
     content: "";
     right: 40px;
@@ -213,17 +265,28 @@ a.hover {
     border-left: 2px solid var(--stripcolor);
     border-bottom: 2px solid var(--stripcolor);
 }
+.mail:hover{
+    color: var(--stripcolorhover);
+    cursor: pointer;
+}
+.mail:hover::before {
+    border-right: 2px solid var(--stripcolorhover);
+    border-bottom: 2px solid var(--stripcolorhover);
+}
+.mail:hover::after {
+    border-left: 2px solid var(--stripcolorhover);
+    border-bottom: 2px solid var(--stripcolorhover);
+}
 
 .git {
     position: absolute;
-    left: 205px;
-    top: 165px;
+    left: 206px;
+    bottom: 80px;
     font-size: 16px;
     font-weight: 400;
-    --stripwidthgit: 50px;
-    --stripheight: 20px;
+    --stripwidthgit: 55px;
+    --stripheight: 30px;
 }
-
 .git::before {
     content: "";
     left: 33px;
@@ -234,7 +297,6 @@ a.hover {
     border-right: 2px solid var(--stripcolor);
     border-bottom: 2px solid var(--stripcolor);
 }
-
 .git::after {
     content: "";
     right: 33px;
@@ -245,10 +307,16 @@ a.hover {
     border-left: 2px solid var(--stripcolor);
     border-bottom: 2px solid var(--stripcolor);
 }
-
-.card-wrapper {
-    height: 272px;
-    perspective: 600px;
-    position: relative;
-    width: 420px;
+.git:hover{
+    color: var(--stripcolorhover);
+    cursor: pointer;
 }
+.git:hover::before {
+    border-right: 2px solid var(--stripcolorhover);
+    border-bottom: 2px solid var(--stripcolorhover);
+}
+.git:hover::after {
+    border-left: 2px solid var(--stripcolorhover);
+    border-bottom: 2px solid var(--stripcolorhover);
+}
+
