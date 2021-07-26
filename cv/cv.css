@@ -9,7 +9,7 @@
 
 :root{
     --stripcolor: #7f7e7e;
-    --stripcolorhover: #ff0000;
+    --stripcolorhover: #ff3a3a;
 }
 
 *,
@@ -22,11 +22,10 @@
 
 body {
     align-items: center;
-    background: linear-gradient(135deg, #333, #333);
+    background: #ffffff;
     display: flex;
     justify-content: center;
     min-height: 100vh;
-    padding: 24px;
 }
 
 a {
@@ -39,7 +38,13 @@ a.hover {
 
 * {
     font-family: "JetBrainsMono", sans-serif;
-    color: #000000;
+    color: #ffffff;
+}
+
+.full-with-card{
+    height: 272px;
+    width: 100%;
+    background: #242424;
 }
 
 .card-wrapper {
@@ -47,7 +52,8 @@ a.hover {
     perspective: 600px;
     position: relative;
     width: 420px;
-    background: #ffffff;
+    background: #242424;
+    margin: 0 auto;
 }
 .card {
     height: 100%;
