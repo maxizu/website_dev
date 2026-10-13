@@ -4,22 +4,21 @@ A small collection of standalone HTML/CSS design experiments for my personal web
 
 ## Live previews
 
-- **CV card:** https://maxizu.github.io/website_dev/cv/cv.html
+- **CV card (root):** https://maxizu.github.io/website_dev/
 - **DEV placeholder:** https://maxizu.github.io/website_dev/dev/index.html
 
 ## Contents
 
 ```
-cv/
-  cv.html     Business-card style contact card with hover "bracket" animation
-  cv.css      Styling (self-hosted JetBrains Mono font via jsDelivr CDN)
+index.html    Business-card style contact card with hover "bracket" animation
+cv.css        Styling (self-hosted JetBrains Mono font via jsDelivr CDN)
 
 dev/
   index.html  Minimal "under construction" placeholder page
   style.css   Styling + corner-loader animation
 ```
 
-### `cv/` – Contact card
+### Contact card (root)
 
 A flipped-business-card-style layout with six linked fields (Job, Me, Instagram, Loc, Mail, Git), each framed by animated corner brackets that change color on hover. Links point to sections on the main site (`max-z.de/#resume`, `max-z.de/#contact`) and external profiles.
 
