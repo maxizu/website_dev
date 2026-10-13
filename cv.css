@@ -26,6 +26,11 @@ body {
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    overflow-x: hidden;
+}
+
+@media (max-width: 440px) {
+    .card-wrapper { transform: scale(0.85); }
 }
 
 .dev-access {
@@ -33,7 +38,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px;
+    height: 36px;
     opacity: 0;
     z-index: 10;
 }
@@ -46,13 +51,36 @@ a.hover {
     text-decoration: underline;
 }
 
+/* Enlarge the real clickable hit-area of the bracketed card links slightly
+   (padding + matching negative margin so text position stays unchanged).
+   Kept modest so adjacent rows (25px apart) never overlap each other. */
+.card-front a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: -8px -12px;
+}
+
+/* The decorative corner brackets are purely visual and some (Instagram/Loc)
+   are much taller (75px) than their own text, reaching into neighboring
+   rows (e.g. over "Me"). Without this, clicking on a bracket intercepts
+   the click meant for a different link underneath/nearby and does nothing
+   useful. pointer-events:none lets clicks pass through to the real link. */
+.job::before, .job::after,
+.me::before, .me::after,
+.insta::before, .insta::after,
+.loc::before, .loc::after,
+.mail::before, .mail::after,
+.git::before, .git::after {
+    pointer-events: none;
+}
+
 * {
     font-family: "JetBrainsMono", sans-serif;
     color: #ffffff;
 }
 
 .full-with-card{
-    height: 272px;
+    height: 274px;
     width: 100%;
     background: #242424;
     border-top: 1px solid var(--stripcolor);
