@@ -55,6 +55,8 @@ a.hover {
     height: 272px;
     width: 100%;
     background: #242424;
+    border-top: 1px solid var(--stripcolor);
+    border-bottom: 1px solid var(--stripcolor);
 }
 
 .card-wrapper {
