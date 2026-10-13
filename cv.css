@@ -22,10 +22,20 @@
 
 body {
     align-items: center;
-    background: #ffffff;
+    background: #242424;
     display: flex;
     justify-content: center;
     min-height: 100vh;
+}
+
+.dev-access {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    opacity: 0;
+    z-index: 10;
 }
 
 a {
